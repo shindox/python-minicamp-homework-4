@@ -1,0 +1,29 @@
+body {
+  background-color: green;
+  /*background-image: url('/static/matrix.gif');*/
+}
+
+body:before {
+  background:url('/static/matrix.gif') repeat center center fixed;
+  display: block; content:""; position: absolute; z-index:-1;
+  top:0; left: 0; right: 0; height: 100%;
+  opacity:.2;
+}
+
+.header {
+  color: whitesmoke;
+  opacity:.3;
+  font-size: 300%;
+}
+
+#movies-list {
+  color: whitesmoke;
+  text-decoration: none;
+  font-size: 200%;
+  opacity: .3;
+}
+
+#movies-list:hover {
+  color: whitesmoke;
+  opacity: .8;
+}

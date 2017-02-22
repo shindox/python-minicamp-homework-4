@@ -1,0 +1,20 @@
+<head>
+  <link rel="stylesheet" type="text/css" href="/static/styles/styles.css">
+</head>
+
+<h1 class="header">My Movies</h1>
+<form action="/movie" method="POST">
+  Movie:<br>
+  <input name="name" size="50" /><br>
+  Year:<br>
+  <input name="year" /><br>
+  Rating:<br>
+  <input name="rating" /><br>
+  Genre:<br>
+  <input name="genre" /><br>
+  Plot Summary:<br>
+  <textarea name ="plot" rows="4" cols="50"></textarea/><br>
+  <input type="submit" value="Submit" />
+</form>
+
+<h3><a id="movies-list" href="/movies">Movies List</a></h3>
