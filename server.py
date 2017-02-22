@@ -38,4 +38,16 @@ def movies():
     connection.close()
     return jsonify(moviesList)
 
+@app.route('/search')
+def search():
+    name = request.args.get('name')
+    connection = sqlite3.connect('database.db')
+    cursor = connection.cursor()
+    cursor.execute('SELECT * FROM movies WHERE name LIKE "%'+name+'%"')
+
+    search_result = cursor.fetchall()
+    connection.close()
+
+    return jsonify(search_result)
+
 app.run(debug = True)

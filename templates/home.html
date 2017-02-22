@@ -3,7 +3,14 @@
 </head>
 
 <h1 class="header">My Movies</h1>
-<form action="/movie" method="POST">
+<br>
+<form class="form" id="search" action="{{ url_for('search') }}" method="GET">
+    <label>Search Movie Title:</label><br>
+    <input type="text" name="name" />
+
+</form>
+<br><br><br><br><br><br><br><br>
+<form class="form" action="/movie" method="POST">
   Movie:<br>
   <input name="name" size="50" /><br>
   Year:<br>
@@ -16,5 +23,7 @@
   <textarea name ="plot" rows="4" cols="50"></textarea/><br>
   <input type="submit" value="Submit" />
 </form>
+
+
 
 <h3><a id="movies-list" href="/movies">Movies List</a></h3>

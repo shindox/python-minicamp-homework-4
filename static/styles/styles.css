@@ -1,6 +1,5 @@
 body {
   background-color: green;
-  /*background-image: url('/static/matrix.gif');*/
 }
 
 body:before {
@@ -13,7 +12,19 @@ body:before {
 .header {
   color: whitesmoke;
   opacity:.3;
-  font-size: 300%;
+  font-size: 400%;
+  padding-left: 0.7em;
+  float:left;
+}
+
+.form {
+  color: whitesmoke;
+  opacity:.5;
+  font-size: 100%;
+}
+
+#search {
+  float: right;
 }
 
 #movies-list {
